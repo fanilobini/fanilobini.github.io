@@ -1,0 +1,13 @@
+=title=
+Action de tri
+==
+
+=main_body=
+Conception de d'infographies sur les actions de tri à adopter.
+==
+
+=infos=
+Client : LBN Communauté (72)
+Secteur : Service Publique
+Année : 2023
+==

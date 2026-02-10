@@ -1,0 +1,14 @@
+=title=
+La Cuisine
+==
+
+=main_body=
+Conception de l’identité visuelle de La Cuisine, cantine intercommunale et service de livraison de repas de la Communauté de Communes LBN (72), avec pour objectif de valoriser les circuits courts, les produits locaux et les partenariats avec les producteurs du territoire.
+==
+
+=infos=
+Client : LBN Communauté
+Secteur : Service Publique
+Lien : https://www.cc-lbn.fr/vivre/services/la-cuisine/
+Année : 2023
+==
