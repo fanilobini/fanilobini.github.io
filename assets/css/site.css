@@ -3,7 +3,7 @@
   src: url("../fonts/FS Industrie Cd Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   src: url("../fonts/FS Industrie Cd Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   src: url("../fonts/FS Industrie Cd Book.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   src: url("../fonts/FS Industrie Cd Black.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   src: url("../fonts/FS Industrie Cd Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @keyframes slideUpFade {
@@ -140,7 +140,7 @@ a:focus-visible {
 .site-header__inner {
   max-width: none;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 18px 20px;
   display: flex;
   align-items: flex-start;
@@ -154,6 +154,9 @@ a:focus-visible {
   letter-spacing: 0em;
   font-size: 72px;
   text-transform: uppercase;
+  line-height: 0.9;
+  display: block;
+  text-decoration: none;
 }
 
 .nav {
