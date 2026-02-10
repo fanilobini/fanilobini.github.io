@@ -142,7 +142,7 @@ a:focus-visible {
   letter-spacing: 0em;
   font-size: 30px;
   text-transform: uppercase;
-  opacity: 0.72;
+  opacity: 1;
 }
 
 .nav__link:hover {
@@ -193,7 +193,7 @@ a:focus-visible {
 .section__inner {
   max-width: 100%;
   margin: 0;
-  padding: 15px 5px 60px;
+  padding: 5px 5px 60px;
 }
 
 .projects {
@@ -235,6 +235,7 @@ a:focus-visible {
   letter-spacing: 0em;
   text-transform: uppercase;
   font-size: 14px;
+  padding-bottom: 14px;
 }
 
 .project-card__subtitle {
