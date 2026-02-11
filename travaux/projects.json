@@ -210,6 +210,26 @@
       "year": 2023
     },
     {
+      "number": 8,
+      "name": "DES FERMES POUR MA VILLE",
+      "title": "Des fermes pour ma ville",
+      "slug": "8-des-fermes-pour-ma-ville",
+      "dir": "8. DES FERMES POUR MA VILLE",
+      "banner": "travaux/8. DES FERMES POUR MA VILLE/banner.png",
+      "bannerType": "image",
+      "home": "travaux/8. DES FERMES POUR MA VILLE/home.png",
+      "homeType": "image",
+      "main_body": "Création de l’identité visuelle pour la ferme “Des Fermes Pour Ma Ville”. Situé à Gisy, la ferme propose des fruits et légumes bios.",
+      "infos": "Client : Les fermes de Gisy\nSecteur : Alimentaire\nLiens : www.fermedegisy.fr\nAnnée : 2021",
+      "media": [
+        {
+          "type": "image",
+          "src": "travaux/8. DES FERMES POUR MA VILLE/1.png"
+        }
+      ],
+      "year": 2021
+    },
+    {
       "number": 12,
       "name": "DETOURS",
       "title": "détours",
