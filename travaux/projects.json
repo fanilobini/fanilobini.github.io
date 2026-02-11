@@ -78,38 +78,6 @@
       "year": 2023
     },
     {
-      "number": 4,
-      "name": "LA CUISINE",
-      "title": "La Cuisine",
-      "slug": "4-la-cuisine",
-      "dir": "4. LA CUISINE",
-      "banner": "travaux/4. LA CUISINE/banner.png",
-      "bannerType": "image",
-      "home": "travaux/4. LA CUISINE/home.png",
-      "homeType": "image",
-      "main_body": "Conception de l’identité visuelle de La Cuisine, cantine intercommunale et service de livraison de repas de la Communauté de Communes LBN (72), avec pour objectif de valoriser les circuits courts, les produits locaux et les partenariats avec les producteurs du territoire.",
-      "infos": "Client : LBN Communauté\nSecteur : Service Publique\nLien : https://www.cc-lbn.fr/vivre/services/la-cuisine/\nAnnée : 2023",
-      "media": [
-        {
-          "type": "image",
-          "src": "travaux/4. LA CUISINE/2.png"
-        },
-        {
-          "type": "image",
-          "src": "travaux/4. LA CUISINE/3.png"
-        },
-        {
-          "type": "image",
-          "src": "travaux/4. LA CUISINE/4.png"
-        },
-        {
-          "type": "image",
-          "src": "travaux/4. LA CUISINE/5.png"
-        }
-      ],
-      "year": 2023
-    },
-    {
       "number": 5,
       "name": "ACTIONS DE TRI",
       "title": "Action de tri",
