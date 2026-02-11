@@ -1,0 +1,12 @@
+=title=
+EEA (Etablissement d'Enseignement Musicale)
+==
+
+=main_body=
+Mise en page de la brochure pour les cours d'enseignements musicales pour la Communauté de Commune LBN (72) 
+
+=infos=
+Client : LBN Communauté
+Secteur : Service publique
+Année : 2023
+==

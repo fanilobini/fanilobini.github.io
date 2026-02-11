@@ -75,7 +75,24 @@
             document.title = p.title ? `${p.title} – Portfolio` : 'Projet – Portfolio';
 
             const hero = document.getElementById('projectHero');
-            if (hero && p.banner) hero.style.backgroundImage = `url("${window.PortfolioData.resolveAssetPath(p.banner)}")`;
+            if (hero && p.banner) {
+              if (p.bannerType === 'video') {
+                // Create video banner
+                const video = document.createElement('video');
+                video.autoplay = true;
+                video.muted = true;
+                video.loop = true;
+                video.playsInline = true;
+                video.preload = 'metadata';
+                video.src = window.PortfolioData.resolveAssetPath(p.banner);
+                video.className = 'project-hero__video';
+                hero.innerHTML = '';
+                hero.appendChild(video);
+              } else {
+                // Use image banner
+                hero.style.backgroundImage = `url("${window.PortfolioData.resolveAssetPath(p.banner)}")`;
+              }
+            }
 
             const title = document.getElementById('projectTitle');
             if (title) title.textContent = p.title ?? p.name ?? '';

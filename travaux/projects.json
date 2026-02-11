@@ -2,13 +2,35 @@
   "version": 1,
   "projects": [
     {
+      "number": 1,
+      "name": "EEA",
+      "title": "EEA (Etablissement d'Enseignement Musicale)",
+      "slug": "1-eea",
+      "dir": "1. EEA",
+      "banner": "travaux/1. EEA/banner.png",
+      "bannerType": "image",
+      "home": "travaux/1. EEA/home.png",
+      "homeType": "image",
+      "main_body": "Mise en page de la brochure pour les cours d'enseignements musicales pour la Communauté de Commune LBN (72)",
+      "infos": "Client : LBN Communauté\nSecteur : Service publique\nAnnée : 2023",
+      "media": [
+        {
+          "type": "image",
+          "src": "travaux/1. EEA/1.png"
+        }
+      ],
+      "year": 2023
+    },
+    {
       "number": 2,
       "name": "FARGO-SACHINKA",
       "title": "FARGO-SACHINKA",
       "slug": "2-fargo-sachinka",
       "dir": "2. FARGO-SACHINKA",
       "banner": "travaux/2. FARGO-SACHINKA/banner.png",
+      "bannerType": "image",
       "home": "travaux/2. FARGO-SACHINKA/home.png",
+      "homeType": "image",
       "main_body": "Création de l’identité visuelle et design du site web de Fargo-Sachinka, agence de communication qui accompagne les acteurs \ndu droit et de la finance et leurs écosystèmes dans la défense et la promotion de leur image.",
       "infos": "Client : FARGO-SACHINKA | SPREY COMMUNICATION | LA PHRATRIE\nSECTEUR : DROIT ET FINANCE\nSite web : fargo-sachinka.com \nAnnée : 2024",
       "media": [
@@ -38,7 +60,9 @@
       "slug": "3-projet-de-territoire",
       "dir": "3. PROJET DE TERRITOIRE",
       "banner": "travaux/3. PROJET DE TERRITOIRE/banner.png",
+      "bannerType": "image",
       "home": "travaux/3. PROJET DE TERRITOIRE/home.png",
+      "homeType": "image",
       "main_body": "Mise en page du projet de territoire 2018-2026 pour la Communauté de Communes LBN (Loué-Brûlon-Noyen) en Sarthe (72).",
       "infos": "Client : LBN Communauté\nSecteur : Service publique\nLien : www.cc-lbn.fr/publications/projet-de-territoire/\nAnnée : 2023",
       "media": [
@@ -60,7 +84,9 @@
       "slug": "4-la-cuisine",
       "dir": "4. LA CUISINE",
       "banner": "travaux/4. LA CUISINE/banner.png",
+      "bannerType": "image",
       "home": "travaux/4. LA CUISINE/home.png",
+      "homeType": "image",
       "main_body": "Conception de l’identité visuelle de La Cuisine, cantine intercommunale et service de livraison de repas de la Communauté de Communes LBN (72), avec pour objectif de valoriser les circuits courts, les produits locaux et les partenariats avec les producteurs du territoire.",
       "infos": "Client : LBN Communauté\nSecteur : Service Publique\nLien : https://www.cc-lbn.fr/vivre/services/la-cuisine/\nAnnée : 2023",
       "media": [
@@ -90,7 +116,9 @@
       "slug": "5-actions-de-tri",
       "dir": "5. ACTIONS DE TRI",
       "banner": "travaux/5. ACTIONS DE TRI/banner.png",
+      "bannerType": "image",
       "home": "travaux/5. ACTIONS DE TRI/home.png",
+      "homeType": "image",
       "main_body": "Conception de d'infographies sur les actions de tri à adopter.",
       "infos": "Client : LBN Communauté (72)\nSecteur : Service Publique\nAnnée : 2023",
       "media": [
@@ -106,13 +134,67 @@
       "year": 2023
     },
     {
+      "number": 6,
+      "name": "EOLE",
+      "title": "éole",
+      "slug": "6-eole",
+      "dir": "6. EOLE",
+      "banner": "travaux/6. EOLE/banner.mp4",
+      "bannerType": "video",
+      "home": "travaux/6. EOLE/home.mp4",
+      "homeType": "video",
+      "main_body": "Création de l’identité visuelle pour une agence de voyage fictive. Cette agence propose des voyages qui se base sur le trajets de vie de personne historique réelles, afin de mettre en avant des petites histoires du passés.",
+      "infos": "Client : Projet de fin d'études\nSecteur : Transports et voyages\nAnnée : 2024",
+      "media": [
+        {
+          "type": "image",
+          "src": "travaux/6. EOLE/1.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/6. EOLE/2.jpg"
+        },
+        {
+          "type": "image",
+          "src": "travaux/6. EOLE/3.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/6. EOLE/4.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/6. EOLE/5.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/6. EOLE/6.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/6. EOLE/7.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/6. EOLE/8.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/6. EOLE/9.png"
+        }
+      ],
+      "year": 2024
+    },
+    {
       "number": 7,
       "name": "SAISON CULTURELLE",
       "title": "Saison Culturelle",
       "slug": "7-saison-culturelle",
       "dir": "7. SAISON CULTURELLE",
       "banner": "travaux/7. SAISON CULTURELLE/banner.png",
+      "bannerType": "image",
       "home": "travaux/7. SAISON CULTURELLE/home.png",
+      "homeType": "image",
       "main_body": "Création de l’identité visuelle de la Saison Culturelle 2023 pour la Communauté de Communes LBN (Loué-Brûlon-Noyen) en Sarthe (72).",
       "infos": "Client : LBN Communauté\nSecteur : Service publique\nAnnée : 2023",
       "media": [
@@ -135,10 +217,6 @@
         {
           "type": "image",
           "src": "travaux/7. SAISON CULTURELLE/5.png"
-        },
-        {
-          "type": "image",
-          "src": "travaux/7. SAISON CULTURELLE/6.png"
         }
       ],
       "year": 2023
@@ -150,7 +228,9 @@
       "slug": "12-detours",
       "dir": "12. DETOURS",
       "banner": "travaux/12. DETOURS/banner.png",
+      "bannerType": "image",
       "home": "travaux/12. DETOURS/home.png",
+      "homeType": "image",
       "main_body": "détours est une application GPS dont le but est d’amener l’utilisateur à sa destination en prenant \nla temps de visiter une commune autrement, ralentir, observer, contempler l’infra-ordinaire.\n\nCollaboration avec les habitants où ceux-ci proposent des balades, lieux et anecdotes qui leur sont chères.\n\nÀ travers de multiples détours, l’utilisateur déambule dans les souvenirs des habitants.\n\nIl plonge ainsi dans leur quotidien tout en portant \nun regard curieux et sensible sur la beauté ordinaire et quotidienne de la commune.",
       "infos": "Client : Projet de fin d'études\nSecteur : Transports et voyages\nAnnée : 2025",
       "media": [

@@ -79,7 +79,21 @@ def build_projects() -> list[dict[str, Any]]:
         number, display_name = parse_numbered_dirname(child.name)
 
         banner = child / "banner.png"
+        banner_video = None
+        for ext in [".mp4", ".webm", ".mov"]:
+            candidate = child / f"banner{ext}"
+            if candidate.exists():
+                banner_video = candidate
+                break
+        
         home = child / "home.png"
+        home_video = None
+        for ext in [".mp4", ".webm", ".mov"]:
+            candidate = child / f"home{ext}"
+            if candidate.exists():
+                home_video = candidate
+                break
+        
         info = child / "info.txt"
 
         info_data = parse_info_txt(info)
@@ -89,7 +103,7 @@ def build_projects() -> list[dict[str, Any]]:
         for f in child.iterdir():
             if not f.is_file():
                 continue
-            if f.name in {"banner.png", "home.png", "info.txt"}:
+            if f.name in {"banner.png", "banner.mp4", "banner.webm", "banner.mov", "home.png", "home.mp4", "home.webm", "home.mov", "info.txt"}:
                 continue
             if f.name.startswith("."):
                 continue
@@ -101,14 +115,35 @@ def build_projects() -> list[dict[str, Any]]:
 
         rel_dir = f"travaux/{child.name}"
 
+        # Prefer video over image for banner and home
+        banner_src = None
+        banner_type = None
+        if banner_video:
+            banner_src = f"{rel_dir}/{banner_video.name}"
+            banner_type = "video"
+        elif banner.exists():
+            banner_src = f"{rel_dir}/banner.png"
+            banner_type = "image"
+        
+        home_src = None
+        home_type = None
+        if home_video:
+            home_src = f"{rel_dir}/{home_video.name}"
+            home_type = "video"
+        elif home.exists():
+            home_src = f"{rel_dir}/home.png"
+            home_type = "image"
+
         project: dict[str, Any] = {
             "number": number,
             "name": display_name,
             "title": title,
             "slug": f"{number}-{slugify(display_name)}" if number != 10**9 else slugify(display_name),
             "dir": child.name,
-            "banner": f"{rel_dir}/banner.png" if banner.exists() else None,
-            "home": f"{rel_dir}/home.png" if home.exists() else None,
+            "banner": banner_src,
+            "bannerType": banner_type,
+            "home": home_src,
+            "homeType": home_type,
             "main_body": info_data.get("main_body", ""),
             "infos": info_data.get("infos", ""),
             "media": [

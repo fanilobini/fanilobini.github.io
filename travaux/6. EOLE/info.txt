@@ -1,0 +1,13 @@
+=title=
+éole
+==
+
+=main_body=
+Création de l’identité visuelle pour une agence de voyage fictive. Cette agence propose des voyages qui se base sur le trajets de vie de personne historique réelles, afin de mettre en avant des petites histoires du passés.
+==
+
+=infos=
+Client : Projet de fin d'études
+Secteur : Transports et voyages
+Année : 2024
+==
