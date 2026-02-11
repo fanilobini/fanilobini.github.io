@@ -153,6 +153,11 @@ a {
   color: var(--accent);
 }
 
+.infos-page .site-header a:hover,
+.infos-page .site-header a:focus-visible {
+  color: #ffffff;
+}
+
 a:focus-visible {
   outline: 2px solid var(--fg);
   outline-offset: 2px;
@@ -292,6 +297,15 @@ a:focus-visible {
 .hero__media--image {
   background-size: cover;
   background-position: center;
+}
+
+.hero__media-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero__media.is-active {
