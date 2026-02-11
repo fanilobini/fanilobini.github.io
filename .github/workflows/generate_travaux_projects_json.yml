@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "travaux/**"
+      - "infos/**"
       - "tools/generate_projects_json.py"
       - ".github/workflows/generate_travaux_projects_json.yml"
 
