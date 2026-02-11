@@ -234,6 +234,37 @@
       "year": 2025
     },
     {
+      "number": 9,
+      "name": "BELLDONNE",
+      "title": "BELLDONNE",
+      "slug": "9-belldonne",
+      "dir": "9. BELLDONNE",
+      "banner": "travaux/9. BELLDONNE/banner.png",
+      "bannerType": "image",
+      "home": "travaux/9. BELLDONNE/home.png",
+      "homeType": "image",
+      "main_body": "",
+      "infos": "",
+      "media": [
+        {
+          "type": "image",
+          "src": "travaux/9. BELLDONNE/1.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/9. BELLDONNE/2.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/9. BELLDONNE/3.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/9. BELLDONNE/4.png"
+        }
+      ]
+    },
+    {
       "number": 12,
       "name": "DETOURS",
       "title": "détours",
