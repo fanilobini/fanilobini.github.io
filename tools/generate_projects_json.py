@@ -79,14 +79,16 @@ def build_projects() -> list[dict[str, Any]]:
         number, display_name = parse_numbered_dirname(child.name)
 
         banner = child / "banner.png"
+        banner_gif = child / "banner.gif"
         banner_video = None
         for ext in [".mp4", ".webm", ".mov"]:
             candidate = child / f"banner{ext}"
             if candidate.exists():
                 banner_video = candidate
                 break
-        
+
         home = child / "home.png"
+        home_gif = child / "home.gif"
         home_video = None
         for ext in [".mp4", ".webm", ".mov"]:
             candidate = child / f"home{ext}"
@@ -103,7 +105,7 @@ def build_projects() -> list[dict[str, Any]]:
         for f in child.iterdir():
             if not f.is_file():
                 continue
-            if f.name in {"banner.png", "banner.mp4", "banner.webm", "banner.mov", "home.png", "home.mp4", "home.webm", "home.mov", "info.txt"}:
+            if f.name in {"banner.png", "banner.gif", "banner.mp4", "banner.webm", "banner.mov", "home.png", "home.gif", "home.mp4", "home.webm", "home.mov", "info.txt"}:
                 continue
             if f.name.startswith("."):
                 continue
@@ -115,10 +117,13 @@ def build_projects() -> list[dict[str, Any]]:
 
         rel_dir = f"travaux/{child.name}"
 
-        # Prefer video over image for banner and home
+        # Prefer GIF over video, then image for banner and home
         banner_src = None
         banner_type = None
-        if banner_video:
+        if banner_gif.exists():
+            banner_src = f"{rel_dir}/banner.gif"
+            banner_type = "image"
+        elif banner_video:
             banner_src = f"{rel_dir}/{banner_video.name}"
             banner_type = "video"
         elif banner.exists():
@@ -127,7 +132,10 @@ def build_projects() -> list[dict[str, Any]]:
         
         home_src = None
         home_type = None
-        if home_video:
+        if home_gif.exists():
+            home_src = f"{rel_dir}/home.gif"
+            home_type = "image"
+        elif home_video:
             home_src = f"{rel_dir}/{home_video.name}"
             home_type = "video"
         elif home.exists():

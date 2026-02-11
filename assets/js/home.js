@@ -51,11 +51,22 @@
         video.className = "hero__video";
         video.autoplay = true;
         video.muted = true;
+        video.defaultMuted = true;
         video.loop = true;
         video.playsInline = true;
-        video.preload = "metadata";
+        video.preload = "auto";
+        video.setAttribute("muted", "");
+        video.setAttribute("playsinline", "");
+        video.setAttribute("autoplay", "");
+        video.setAttribute("loop", "");
         video.src = banner.src;
         hero.appendChild(video);
+        const playPromise = video.play();
+        if (playPromise && typeof playPromise.catch === "function") {
+          playPromise.catch(() => {
+            // Silently fail if autoplay is blocked.
+          });
+        }
       } else {
         hero.style.backgroundImage = `url("${banner.src}")`;
         hero.style.backgroundPosition = "center";
@@ -108,16 +119,24 @@
         video.className = "project-card__video";
         video.autoplay = true;
         video.muted = true;
+        video.defaultMuted = true;
         video.loop = true;
         video.playsInline = true;
         video.preload = "auto";
+        video.setAttribute("muted", "");
+        video.setAttribute("playsinline", "");
+        video.setAttribute("autoplay", "");
+        video.setAttribute("loop", "");
         video.src = homeUrl;
         media.appendChild(video);
         
         // Ensure autoplay starts
-        video.play().catch(() => {
-          // Silently fail if autoplay is blocked
-        });
+        const playPromise = video.play();
+        if (playPromise && typeof playPromise.catch === "function") {
+          playPromise.catch(() => {
+            // Silently fail if autoplay is blocked.
+          });
+        }
       } else {
         // Use image as normal
         if (img) {
