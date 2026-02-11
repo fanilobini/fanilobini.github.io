@@ -1,0 +1,13 @@
+=title=
+Belledonne
+==
+
+=main_body=
+Projet de fin d’étude : Refonte de l’identité visuelle de Belledonne, une épicerie sucré spécialisé en boulangerie, chocolaterie, biscuiterie et confiseur de bonbons basé sur Grenoble.
+==
+
+=infos=
+Client : Projet de fin d'études
+Secteur : Alimentaire
+Année : 2023
+==
