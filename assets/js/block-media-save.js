@@ -2,6 +2,7 @@
   function isMediaTarget(target) {
     if (!target) return false;
     if (target.tagName === "IMG" || target.tagName === "VIDEO") return true;
+    if (target.closest(".hero, .project-hero, .infos__media")) return true;
     return !!target.closest("img, video");
   }
 
