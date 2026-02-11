@@ -673,3 +673,25 @@ a:focus-visible {
     flex-direction: column;
   }
 }
+
+@media (max-width: 640px) {
+  .hero {
+    display: none;
+  }
+
+  .project-hero {
+    display: none;
+  }
+
+  .is-home .site-header--overlay {
+    position: sticky;
+  }
+
+  .section__inner {
+    padding: 0px 8px 60px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
