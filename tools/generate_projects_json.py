@@ -7,6 +7,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 TRAVAUX_DIR = ROOT / "travaux"
+INFOS_DIR = ROOT / "infos"
 OUT_PATH = TRAVAUX_DIR / "projects.json"
 
 SECTION_RE = re.compile(r"^=(?P<key>[a-zA-Z0-9_\-]+)=$")
@@ -67,6 +68,25 @@ def sort_media_key(path: Path) -> tuple[int, str]:
     m = re.match(r"^(\d+)", path.stem)
     n = int(m.group(1)) if m else 10**9
     return (n, path.name)
+
+
+def build_infos_payload() -> dict[str, Any]:
+    info_path = INFOS_DIR / "info.txt"
+    info_data = parse_info_txt(info_path)
+    photo = None
+
+    for name in ["photo.png", "photo.jpg", "photo.jpeg"]:
+        candidate = INFOS_DIR / name
+        if candidate.exists():
+            photo = f"infos/{name}"
+            break
+
+    return {
+        "main_body": info_data.get("main_body", ""),
+        "photo": photo,
+        "etsy": "https://www.etsy.com/shop/Pamplemoosse",
+        "cv": "",
+    }
 
 
 def build_projects() -> list[dict[str, Any]]:
@@ -174,6 +194,7 @@ def main() -> None:
     payload = {
         "version": 1,
         "projects": projects,
+        "infos": build_infos_payload(),
     }
 
     OUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

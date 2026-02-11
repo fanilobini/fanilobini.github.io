@@ -28,8 +28,12 @@ async function _fetchJsonWithCandidates(candidates) {
   throw lastErr ?? new Error("Failed to load projects.json");
 }
 
+async function loadPayload() {
+  return _fetchJsonWithCandidates(_projectsJsonCandidates());
+}
+
 async function loadProjects() {
-  const data = await _fetchJsonWithCandidates(_projectsJsonCandidates());
+  const data = await loadPayload();
   return Array.isArray(data.projects) ? data.projects : [];
 }
 
@@ -50,6 +54,7 @@ function findProject(projects, slug) {
 }
 
 window.PortfolioData = {
+  loadPayload,
   loadProjects,
   byNumberAsc,
   findProject,

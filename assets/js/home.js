@@ -15,7 +15,7 @@
     return;
   }
 
-  projects.sort(window.PortfolioData.byNumberAsc);
+  projects.sort((a, b) => (b.number ?? 0) - (a.number ?? 0));
 
   if (heroTitle) {
     heroTitle.textContent = "FANILO BINI";
@@ -35,17 +35,24 @@
     .filter((p) => p.banner)
     .map((p) => ({
       src: window.PortfolioData.resolveAssetPath(p.banner),
-      type: p.bannerType || "image"
+      type: p.bannerType || "image",
     }));
 
   if (hero && banners.length > 0) {
     let i = 0;
+    let activeEl = null;
+    let mediaLayer = hero.querySelector(".hero__media-layer");
 
-    function setCurrentBanner(index) {
-      // Clear existing content
-      hero.innerHTML = "";
-      
-      const banner = banners[index];
+    if (!mediaLayer) {
+      mediaLayer = document.createElement("div");
+      mediaLayer.className = "hero__media-layer";
+      hero.prepend(mediaLayer);
+    }
+
+    function buildMedia(banner) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "hero__media";
+
       if (banner.type === "video") {
         const video = document.createElement("video");
         video.className = "hero__video";
@@ -60,7 +67,8 @@
         video.setAttribute("autoplay", "");
         video.setAttribute("loop", "");
         video.src = banner.src;
-        hero.appendChild(video);
+        wrapper.appendChild(video);
+
         const playPromise = video.play();
         if (playPromise && typeof playPromise.catch === "function") {
           playPromise.catch(() => {
@@ -68,9 +76,34 @@
           });
         }
       } else {
-        hero.style.backgroundImage = `url("${banner.src}")`;
-        hero.style.backgroundPosition = "center";
+        wrapper.classList.add("hero__media--image");
+        wrapper.style.backgroundImage = `url("${banner.src}")`;
       }
+
+      return wrapper;
+    }
+
+    function setCurrentBanner(index) {
+      const banner = banners[index];
+      const nextEl = buildMedia(banner);
+      mediaLayer.appendChild(nextEl);
+
+      requestAnimationFrame(() => {
+        nextEl.classList.add("is-active");
+        if (activeEl) {
+          activeEl.classList.remove("is-active");
+          activeEl.classList.add("is-fading");
+          const oldEl = activeEl;
+          oldEl.addEventListener(
+            "transitionend",
+            () => {
+              if (oldEl.parentNode) oldEl.parentNode.removeChild(oldEl);
+            },
+            { once: true }
+          );
+        }
+        activeEl = nextEl;
+      });
     }
 
     setCurrentBanner(0);

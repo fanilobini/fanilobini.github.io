@@ -9,44 +9,38 @@
     <link rel="preload" href="../assets/fonts/FS Industrie Cd Bold.otf" as="font" type="font/otf" crossorigin />
     <link rel="stylesheet" href="../assets/css/site.css" />
   </head>
-  <body>
+  <body class="infos-page">
     <header class="site-header">
       <div class="site-header__inner">
         <a class="brand" href="../">FANILO BINI</a>
         <nav class="nav">
-          <a class="nav__link" href="../">Travaux</a>
+          <a class="nav__link" href="../#projects-section">Travaux</a>
           <a class="nav__link nav__link--active" href="./">Infos</a>
-          <a class="nav__link" href="../shop/">Shop</a>
+          <a class="nav__link" href="https://www.etsy.com/shop/Pamplemoosse" target="_blank" rel="noopener noreferrer">Shop</a>
           <a class="nav__link" href="https://www.instagram.com/fanilobini" target="_blank" rel="noopener noreferrer">Insta</a>
           <a class="nav__link" href="https://www.malt.fr/profile/fanilobini" target="_blank" rel="noopener noreferrer">Malt</a>
         </nav>
       </div>
     </header>
 
-    <main class="project">
-      <div class="project__header" style="grid-template-columns:1fr;">
-        <div>
-          <h1 class="project__title">Infos</h1>
-          <div class="project__body">
-Bio / contact à ajouter.
-
-(Si tu veux la même logique “zéro HTML” que `travaux/`, on peut brancher cette page sur un `infos.txt`.)
+    <main class="infos" aria-label="Infos">
+      <div class="infos__inner">
+        <div class="infos__text">
+          <div class="infos__kicker">Infos</div>
+          <div class="infos__body" id="infosBody"></div>
+          <div class="infos__actions">
+            <a class="infos__link" id="etsyLink" href="https://www.etsy.com/shop/Pamplemoosse" target="_blank" rel="noopener noreferrer">Etsy shop</a>
+            <span class="infos__link infos__link--disabled" id="cvLink">Mon CV (bientot)</span>
           </div>
+        </div>
+        <div class="infos__media">
+          <img id="infosPhoto" class="infos__photo" alt="Graphic design" />
         </div>
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="footer__inner">
-        <div class="footer__left">
-          <div class="footer__title">FANILO BINI</div>
-          <div class="footer__line">EMAIL: <a class="footer__link" href="mailto:FANILO.F@GMAIL.COM">FANILO.F@GMAIL.COM</a></div>
-        </div>
-        <div class="footer__right">
-          <a class="footer__link" href="https://www.instagram.com/fanilobini" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
-          <a class="footer__link" href="https://www.linkedin.com/in/fanilo-bini" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-        </div>
-      </div>
-    </footer>
+    <script src="../assets/js/projects.js"></script>
+    <script src="../assets/js/infos.js"></script>
+    <script src="../assets/js/block-media-save.js"></script>
   </body>
 </html>

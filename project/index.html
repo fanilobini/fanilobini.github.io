@@ -14,9 +14,9 @@
       <div class="site-header__inner">
         <a class="brand" href="../">FANILO BINI</a>
         <nav class="nav">
-          <a class="nav__link" href="../">Travaux</a>
+          <a class="nav__link" href="../#projects-section">Travaux</a>
           <a class="nav__link" href="../infos/">Infos</a>
-          <a class="nav__link" href="../shop/">Shop</a>
+          <a class="nav__link" href="https://www.etsy.com/shop/Pamplemoosse" target="_blank" rel="noopener noreferrer">Shop</a>
           <a class="nav__link" href="https://www.instagram.com/fanilo.bini" target="_blank" rel="noopener noreferrer">Insta</a>
           <a class="nav__link" href="https://www.malt.fr/profile/fanilobini" target="_blank" rel="noopener noreferrer">Malt</a>
         </nav>
@@ -52,9 +52,12 @@
         </div>
       </div>
     </footer>
+    <button class="back-to-top" type="button" aria-label="Retour en haut">Top</button>
 
     <script src="../assets/js/projects.js"></script>
     <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/block-media-save.js"></script>
+    <script src="../assets/js/back-to-top.js"></script>
     <script>
       (function () {
         const params = new URLSearchParams(location.search);
@@ -101,7 +104,57 @@
             if (body) body.textContent = p.main_body ?? '';
 
             const infos = document.getElementById('projectInfos');
-            if (infos) infos.textContent = p.infos ?? '';
+            if (infos) {
+              const infoText = p.infos ?? '';
+              const lines = infoText.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+              const frag = document.createDocumentFragment();
+
+              const urlRegex = /(https?:\/\/[^\s]+|www\.[^\s]+)/g;
+
+              function appendWithLinks(container, text) {
+                if (!text) return;
+                let lastIndex = 0;
+                for (const match of text.matchAll(urlRegex)) {
+                  const url = match[0];
+                  const index = match.index ?? 0;
+                  if (index > lastIndex) {
+                    container.appendChild(document.createTextNode(text.slice(lastIndex, index)));
+                  }
+                  const link = document.createElement('a');
+                  link.href = url.startsWith('http') ? url : `https://${url}`;
+                  link.target = '_blank';
+                  link.rel = 'noopener noreferrer';
+                  link.textContent = url;
+                  container.appendChild(link);
+                  lastIndex = index + url.length;
+                }
+                if (lastIndex < text.length) {
+                  container.appendChild(document.createTextNode(text.slice(lastIndex)));
+                }
+              }
+
+              for (const line of lines) {
+                const row = document.createElement('div');
+                const parts = line.split(':');
+                if (parts.length > 1) {
+                  const label = parts.shift().trim();
+                  const value = parts.join(':').trim();
+                  const strong = document.createElement('strong');
+                  strong.textContent = `${label}:`;
+                  row.appendChild(strong);
+                  if (value) {
+                    row.appendChild(document.createTextNode(' '));
+                    appendWithLinks(row, value);
+                  }
+                } else {
+                  appendWithLinks(row, line);
+                }
+                frag.appendChild(row);
+              }
+
+              infos.innerHTML = '';
+              infos.appendChild(frag);
+            }
 
             const gallery = document.getElementById('gallery');
             if (!gallery) return;
