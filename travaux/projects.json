@@ -236,15 +236,15 @@
     {
       "number": 9,
       "name": "BELLDONNE",
-      "title": "BELLDONNE",
+      "title": "Belledonne",
       "slug": "9-belldonne",
       "dir": "9. BELLDONNE",
       "banner": "travaux/9. BELLDONNE/banner.png",
       "bannerType": "image",
       "home": "travaux/9. BELLDONNE/home.png",
       "homeType": "image",
-      "main_body": "",
-      "infos": "",
+      "main_body": "Projet de fin d’étude : Refonte de l’identité visuelle de Belledonne, une épicerie sucré spécialisé en boulangerie, chocolaterie, biscuiterie et confiseur de bonbons basé sur Grenoble.",
+      "infos": "Client : Projet de fin d'études\nSecteur : Alimentaire\nAnnée : 2023",
       "media": [
         {
           "type": "image",
@@ -262,7 +262,8 @@
           "type": "image",
           "src": "travaux/9. BELLDONNE/4.png"
         }
-      ]
+      ],
+      "year": 2023
     },
     {
       "number": 12,
