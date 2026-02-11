@@ -78,7 +78,7 @@ def build_infos_payload() -> dict[str, Any]:
     for name in ["photo.png", "photo.jpg", "photo.jpeg"]:
         candidate = INFOS_DIR / name
         if candidate.exists():
-            photo = f"infos/{name}"
+            photo = f"../infos/{name}"
             break
 
     return {

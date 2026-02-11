@@ -264,7 +264,7 @@
   ],
   "infos": {
     "main_body": "*DESIGNER GRAPHIQUE 360°, JE PRENDS PLAISIR À DÉVELOPPER DES UNIVERS GRAPHIQUES DE TOUTES SORTES, *DU PLUS INSTITUTIONNEL AU MOINS CONVENTIONNEL*. TOUJOURS UN CRAYON À LA MAIN  J'AI EU LA CHANCE DE METTRE *MES TALENTS D'ILLUSTRATRICE* AUX SERVICES DES COLLECTIVITÉS DANS DIVERS PROJETS.",
-    "photo": "infos/photo.png",
+    "photo": "../infos/photo.png",
     "etsy": "https://www.etsy.com/shop/Pamplemoosse",
     "cv": ""
   }
