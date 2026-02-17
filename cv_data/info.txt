@@ -1,0 +1,60 @@
+=name=
+FANILO BINI
+==
+
+=title=
+Designer Graphique 360°
+==
+
+=contact_email=
+fanilo.f@gmail.com
+==
+
+=contact_phone=
++33 6 XX XX XX XX
+==
+
+=contact_location=
+Paris, France
+==
+
+=profile=
+*Designer graphique 360°*, je prends plaisir à développer des univers graphiques de toutes sortes, *du plus institutionnel au moins conventionnel*. Toujours un crayon à la main, j'ai eu la chance de mettre *mes talents d'illustratrice* aux services des collectivités dans divers projets.
+==
+
+=experience=
+*Graphiste Freelance* | Paris | 2020 - Présent
+Création d'identités visuelles complètes pour des clients variés dans les secteurs publics et privés. Développement de sites web, illustration, mise en page de supports print et digitaux.
+
+*Designer Graphique* | Agence XYZ | Paris | 2018 - 2020
+Conception graphique pour des projets institutionnels et culturels. Collaboration avec les équipes créatives pour développer des campagnes de communication cohérentes.
+
+*Junior Designer* | Studio ABC | Lyon | 2016 - 2018
+Assistance sur des projets de branding et de création graphique. Réalisation d'illustrations et de mises en page pour supports print.
+==
+
+=education=
+*Master Design Graphique* | École Supérieure d'Art | Paris | 2015 - 2016
+Spécialisation en identité visuelle et communication visuelle.
+
+*Licence Arts Appliqués* | Université des Arts | Lyon | 2012 - 2015
+Formation générale en design, illustration et arts graphiques.
+==
+
+=skills=
+*Identité Visuelle* | *Illustration* | *Design Web* | *Print* | *Typography* | *UX/UI Design* | *Branding* | *Packaging*
+==
+
+=tools=
+*Adobe Creative Suite* (Photoshop, Illustrator, InDesign)
+*Figma* | *Sketch*
+*HTML/CSS*
+*After Effects*
+*Procreate*
+==
+
+=languages=
+*Français* - Langue maternelle
+*Anglais* - Courant
+*Malgache* - Bilingue
+==

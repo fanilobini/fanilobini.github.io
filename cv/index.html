@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV - Fanilo Bini</title>
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="preload" href="../assets/fonts/FS Industrie Cd Regular.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="../assets/fonts/FS Industrie Cd Bold.otf" as="font" type="font/otf" crossorigin />
+    <link rel="stylesheet" href="../assets/css/site.css" />
+    <link rel="stylesheet" href="../assets/css/cv.css" />
+  </head>
+  <body class="cv-page">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../">FANILO BINI</a>
+        <nav class="nav">
+          <a class="nav__link" href="../#projects-section">Travaux</a>
+          <a class="nav__link" href="../infos/">Infos</a>
+          <a class="nav__link" href="https://www.etsy.com/shop/Pamplemoosse" target="_blank" rel="noopener noreferrer">Shop</a>
+          <a class="nav__link" href="https://www.instagram.com/fanilobini" target="_blank" rel="noopener noreferrer">Insta</a>
+          <a class="nav__link" href="https://www.malt.fr/profile/fanilobini" target="_blank" rel="noopener noreferrer">Malt</a>
+          <a class="nav__link nav__link--active" href="./">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="cv" aria-label="Curriculum Vitae">
+      <div class="cv__container">
+        <!-- Header Section -->
+        <div class="cv__header">
+          <h1 class="cv__name" id="cvName"></h1>
+          <p class="cv__title" id="cvTitle"></p>
+          <div class="cv__contact" id="cvContact"></div>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="cv__content">
+          <!-- Left Column -->
+          <div class="cv__main">
+            <!-- Profile -->
+            <section class="cv__section cv__section--profile">
+              <h2 class="cv__section-title">Profil</h2>
+              <div class="cv__section-content" id="cvProfile"></div>
+            </section>
+
+            <!-- Experience -->
+            <section class="cv__section cv__section--experience">
+              <h2 class="cv__section-title">Expérience</h2>
+              <div class="cv__section-content" id="cvExperience"></div>
+            </section>
+
+            <!-- Education -->
+            <section class="cv__section cv__section--education">
+              <h2 class="cv__section-title">Formation</h2>
+              <div class="cv__section-content" id="cvEducation"></div>
+            </section>
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="cv__sidebar">
+            <!-- Skills -->
+            <section class="cv__section cv__section--skills">
+              <h2 class="cv__section-title">Compétences</h2>
+              <div class="cv__section-content" id="cvSkills"></div>
+            </section>
+
+            <!-- Tools -->
+            <section class="cv__section cv__section--tools">
+              <h2 class="cv__section-title">Outils</h2>
+              <div class="cv__section-content" id="cvTools"></div>
+            </section>
+
+            <!-- Languages -->
+            <section class="cv__section cv__section--languages">
+              <h2 class="cv__section-title">Langues</h2>
+              <div class="cv__section-content" id="cvLanguages"></div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Footer Actions -->
+        <div class="cv__actions">
+          <button class="cv__btn cv__btn--print" onclick="window.print()">Imprimer / PDF</button>
+          <a class="cv__btn cv__btn--secondary" href="../infos/">Retour aux Infos</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="../assets/js/projects.js"></script>
+    <script src="../assets/js/cv.js"></script>
+    <script src="../assets/js/block-media-save.js"></script>
+  </body>
+</html>

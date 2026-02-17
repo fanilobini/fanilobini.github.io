@@ -63,8 +63,9 @@
       etsyEl.href = info.etsy;
     }
 
-    if (cvEl) {
-      cvEl.setAttribute("aria-disabled", "true");
+    // CV link is now available
+    if (cvEl && cvEl.tagName === 'A') {
+      cvEl.href = "../cv/";
     }
   }
 
