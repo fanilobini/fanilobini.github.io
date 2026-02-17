@@ -243,8 +243,8 @@
       "bannerType": "image",
       "home": "travaux/8. LA CUISINE/home.png",
       "homeType": "image",
-      "main_body": "Conception de l’identité visuelle de La Cuisine, cantine intercommunale et service de livraison de repas de la Communauté de Communes LBN (72), avec pour objectif de valoriser les circuits courts, les produits locaux et les partenariats avec les producteurs du territoire.\n\nClient : LBN Communauté\nSecteur : Service Publique\nLien : https://www.cc-lbn.fr/vivre/services/la-cuisine/\nAnnée : 2023",
-      "infos": "Client : Projet de fin d'études\nSecteur : Transports et voyages\nAnnée : 2025",
+      "main_body": "Conception de l’identité visuelle de La Cuisine, cantine intercommunale et service de livraison de repas de la Communauté de Communes LBN (72), avec pour objectif de valoriser les circuits courts, les produits locaux et les partenariats avec les producteurs du territoire.",
+      "infos": "Client : LBN Communauté\nSecteur : Service Publique\nLien : www.cc-lbn.fr/vivre/services/la-cuisine\nAnnée : 2023",
       "media": [
         {
           "type": "image",
@@ -267,7 +267,7 @@
           "src": "travaux/8. LA CUISINE/5.png"
         }
       ],
-      "year": 2025
+      "year": 2023
     },
     {
       "number": 9,
