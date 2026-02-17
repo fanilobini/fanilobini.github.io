@@ -302,6 +302,38 @@
       "year": 2023
     },
     {
+      "number": 10,
+      "name": "CALENDRIER",
+      "title": "Calendrier 2026",
+      "slug": "10-calendrier",
+      "dir": "10. CALENDRIER",
+      "banner": "travaux/10. CALENDRIER/banner.png",
+      "bannerType": "image",
+      "home": "travaux/10. CALENDRIER/home.png",
+      "homeType": "image",
+      "main_body": "Calendrier 2026 sur le thème des poissons. Découvrez des espèces imaginaires, magiques et hors du commun dans ce calendrier !",
+      "infos": "Client : Projet de fin d'études\nSecteur : Transports et voyages\nLien : https://www.etsy.com/shop/Pamplemoosse\nAnnée : 2026",
+      "media": [
+        {
+          "type": "image",
+          "src": "travaux/10. CALENDRIER/1.png"
+        },
+        {
+          "type": "video",
+          "src": "travaux/10. CALENDRIER/2.mp4"
+        },
+        {
+          "type": "image",
+          "src": "travaux/10. CALENDRIER/3.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/10. CALENDRIER/4.png"
+        }
+      ],
+      "year": 2026
+    },
+    {
       "number": 12,
       "name": "DETOURS",
       "title": "détours",
