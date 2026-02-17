@@ -9,11 +9,39 @@
 		<link rel="preload" href="./assets/fonts/FS Industrie Cd Regular.otf" as="font" type="font/otf" crossorigin />
 		<link rel="preload" href="./assets/fonts/FS Industrie Cd Bold.otf" as="font" type="font/otf" crossorigin />
 		<link rel="stylesheet" href="./assets/css/site.css" />
+		<style>
+			body.home-loading .site-header,
+			body.home-loading main,
+			body.home-loading footer,
+			body.home-loading .back-to-top {
+				visibility: hidden;
+			}
+			body.home-loading .home-loader {
+				opacity: 1;
+				visibility: visible;
+			}
+		</style>
 	</head>
-	<body class="is-home">
+	<body class="is-home home-loading">
+		<div class="home-loader" id="homeLoader" aria-live="polite" aria-label="Chargement" style="position: fixed; inset: 0; background: #09E37A; display: flex; align-items: center; justify-content: center; z-index: 9999;">
+			<div class="home-loader__inner">
+				<img class="home-loader__logo" src="./assets/icone%20pamplemoosse.svg" alt="Pamplemoosse" />
+				<div class="home-loader__name">FANILO BINI</div>
+				<div class="home-loader__subtitle" aria-hidden="true">
+					<span class="home-loader__pulse" style="--delay: 0s;">Graphiste</span>
+					<span class="home-loader__sep"> - </span>
+					<span class="home-loader__pulse" style="--delay: 0.2s;">Directrice Artistique</span>
+					<span class="home-loader__sep"> - </span>
+					<span class="home-loader__pulse" style="--delay: 0.4s;">Illustration</span>
+				</div>
+			</div>
+		</div>
 		<header class="site-header site-header--overlay" id="siteHeader">
 			<div class="site-header__inner">
-				<a class="brand" href="./">FANILO BINI</a>
+				<div class="brand-block">
+					<a class="brand" href="./">FANILO BINI</a>
+					<div class="brand-subtitle">Graphiste - Directrice Artistique - Illustration</div>
+				</div>
 				<nav class="nav">
 			<a class="nav__link nav__link--active" href="./#projects-section">Travaux</a>
 					<a class="nav__link" href="./infos/">Infos</a>

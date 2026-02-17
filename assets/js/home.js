@@ -188,3 +188,53 @@
   projectsEl.innerHTML = "";
   projectsEl.appendChild(frag);
 })();
+
+(function initHomeLoader() {
+  const loader = document.getElementById("homeLoader");
+  if (!loader) return;
+
+  const nameEl = loader.querySelector(".home-loader__name");
+  const subtitleEl = loader.querySelector(".home-loader__subtitle");
+
+  function syncSubtitleWidth() {
+    if (!nameEl || !subtitleEl) return;
+    const width = Math.ceil(nameEl.getBoundingClientRect().width);
+    if (width > 0) {
+      subtitleEl.style.width = `${width}px`;
+    }
+  }
+
+  const minDurationMs = 2000;
+  const startTime = performance.now();
+
+  function scheduleHide() {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const elapsed = performance.now() - startTime;
+        const wait = Math.max(0, minDurationMs - elapsed);
+        window.setTimeout(() => {
+          loader.classList.add("is-hidden");
+          document.body.classList.remove("home-loading");
+          window.setTimeout(() => {
+            loader.remove();
+          }, 700);
+        }, wait);
+      });
+    });
+  }
+
+  if (document.readyState === "complete") {
+    syncSubtitleWidth();
+    scheduleHide();
+    return;
+  }
+
+  window.addEventListener("load", () => {
+    syncSubtitleWidth();
+    scheduleHide();
+  });
+
+  window.addEventListener("resize", () => {
+    syncSubtitleWidth();
+  });
+})();

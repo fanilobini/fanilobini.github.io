@@ -127,6 +127,73 @@ body {
   letter-spacing: 0em;
 }
 
+.home-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.home-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.home-loader__inner {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.home-loader__logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 0.9rem;
+}
+
+.home-loader__name {
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.home-loader__subtitle {
+  font-size: 1.0rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.home-loader__pulse {
+  display: inline-block;
+  animation: homeLoaderPulse 1.2s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+.home-loader__sep {
+  display: inline-block;
+}
+
+@keyframes homeLoaderPulse {
+  0%,
+  80%,
+  100% {
+    opacity: 0.35;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
 .infos-page {
   background: var(--accent);
   color: var(--fg);
@@ -209,6 +276,28 @@ a:focus-visible {
   line-height: 0.9;
   display: block;
   text-decoration: none;
+}
+
+.brand-block {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 auto;
+}
+
+.brand-subtitle {
+  display: block;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: inherit;
+  pointer-events: none;
 }
 
 .nav {
