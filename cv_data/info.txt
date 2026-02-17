@@ -3,7 +3,7 @@ FANILO BINI
 ==
 
 =title=
-Designer Graphique 360°
+GRAPHISTE / DIRECTION ARTISTIQUE
 ==
 
 =contact_email=
@@ -11,50 +11,67 @@ fanilo.f@gmail.com
 ==
 
 =contact_phone=
-+33 6 XX XX XX XX
++33 6 31 19 82 09
 ==
 
 =contact_location=
-Paris, France
+Paris, île-de-France, France
 ==
 
 =profile=
-*Designer graphique 360°*, je prends plaisir à développer des univers graphiques de toutes sortes, *du plus institutionnel au moins conventionnel*. Toujours un crayon à la main, j'ai eu la chance de mettre *mes talents d'illustratrice* aux services des collectivités dans divers projets.
+Designer graphique 360° avec plus de quatre ans d’éxperience, ma direction artistique allie créativité et proximité.
+
+Avec l’illustration, je conçois des identités visuelles et des supports de communication pour former du lien avec le public. Mes réalisations s’inscrivent dans une démarche d’éco-conception, et dans l’inclusion.
+
+J’ai le permis B et je suis véhiculée; je suis mobile sur Paris/Île-de-France, Sarthe et Mayenne.
 ==
 
 =experience=
-*Graphiste Freelance* | Paris | 2020 - Présent
-Création d'identités visuelles complètes pour des clients variés dans les secteurs publics et privés. Développement de sites web, illustration, mise en page de supports print et digitaux.
+*Directrice Artistique Junior* | SPREY | 2023 - 2025
+Direction artistique et branding (Fargo-Sachinka, L’Atelier Borromée,...)
+Déclinaisons et créations de formats pour les réseaux sociaux ( Sanofi, Conseil de L’Europe, FHP, le Vrac de l’Estuaire, BATORAMA...)
+Montage vidéo
 
-*Designer Graphique* | Agence XYZ | Paris | 2018 - 2020
-Conception graphique pour des projets institutionnels et culturels. Collaboration avec les équipes créatives pour développer des campagnes de communication cohérentes.
+*Chargée de Communication* | LBN communauté | 2022 - 2023
+Création et réalisation de supports de communication internes et externes (Saisons Culturelles,
+Magazines mensuels, Festival de la Petite Enfance, Projet de Territoire, La Cuisine,...)
+Signalétique (Gestion de Tri)
+Montage vidéo (Saison Culturelle)
+Postes reseaux sociaux et infographies
+Mise en page de mensuels
 
-*Junior Designer* | Studio ABC | Lyon | 2016 - 2018
-Assistance sur des projets de branding et de création graphique. Réalisation d'illustrations et de mises en page pour supports print.
+*Assistant graphiste* | Apparelo | 2021 - 2022
+Contrôle et préparation des fichiers PAO destinés au marquage textile (sérigraphie, broderie,
+transfert numérique) et objets publicitaires
+Saisie de BATs
+
+*Mairie de Solesmes* | Stagiaire graphiste | 2021
+Design UX/UI sur le site internet municipale, Conception d'affiche et vignette WEB
 ==
 
 =education=
-*Master Design Graphique* | École Supérieure d'Art | Paris | 2015 - 2016
-Spécialisation en identité visuelle et communication visuelle.
+*Mastère Direction Artistique Communication 360°/ Communication Responsable* | LISAA | Paris | 2025
+Brand design, Direction Artistique, Communication inclusive, Managment, Eco-Conception, Montage vidéo, Motion design
+Publicité, Marketing, UI/UX, Gestion de projets
+Sujet de Mémoire : La communication culturelle dans les colléctivités
 
-*Licence Arts Appliqués* | Université des Arts | Lyon | 2012 - 2015
-Formation générale en design, illustration et arts graphiques.
+*Bachelor Communication Visuelle* | COM’ART | Paris | 2023
+Logo design et brand design, Studio Création, Expression plastique, Marketing, PAO, Motion design
 ==
 
 =skills=
-*Identité Visuelle* | *Illustration* | *Design Web* | *Print* | *Typography* | *UX/UI Design* | *Branding* | *Packaging*
+Design UX/UI | Mis en page | Création d’identité visuelle 360 | Packaging | Montage vidéo | Motion design | Illustration | Images IA | Gestion | Esprit d'équipe | Créative | Appliquée
 ==
 
 =tools=
-*Adobe Creative Suite* (Photoshop, Illustrator, InDesign)
+*Adobe Creative Suite* (Photoshop, Illustrator, InDesign, Adobe XD, After Effectts)
 *Figma* | *Sketch*
-*HTML/CSS*
-*After Effects*
+*Word* | *Excel* | *PowerPoint*
 *Procreate*
 ==
 
 =languages=
-*Français* - Langue maternelle
-*Anglais* - Courant
-*Malgache* - Bilingue
+*Français* 
+*Anglais*
+*Espagnol* 
 ==
