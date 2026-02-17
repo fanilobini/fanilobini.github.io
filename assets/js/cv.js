@@ -92,12 +92,12 @@
     const frag = document.createDocumentFragment();
 
     lines.forEach((line) => {
-      // Split by pipe for inline items
+      const div = document.createElement("div");
+      div.className = "cv__skill-line";
+      
+      // Split by pipe for inline items, but preserve formatting
       if (line.includes("|")) {
         const items = line.split("|").map((item) => item.trim()).filter(Boolean);
-        const div = document.createElement("div");
-        div.className = "cv__skill-group";
-        
         items.forEach((item, index) => {
           if (index > 0) {
             const sep = document.createElement("span");
@@ -110,14 +110,11 @@
           appendEmphasis(span, item);
           div.appendChild(span);
         });
-        
-        frag.appendChild(div);
       } else {
-        const div = document.createElement("div");
-        div.className = "cv__skill-line";
         appendEmphasis(div, line);
-        frag.appendChild(div);
       }
+      
+      frag.appendChild(div);
     });
 
     container.appendChild(frag);

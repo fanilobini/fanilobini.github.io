@@ -27,54 +27,51 @@
 
     <main class="cv" aria-label="Curriculum Vitae">
       <div class="cv__container">
-        <!-- Header Section -->
-        <div class="cv__header">
-          <h1 class="cv__name" id="cvName"></h1>
-          <p class="cv__title" id="cvTitle"></p>
-          <div class="cv__contact" id="cvContact"></div>
-        </div>
-
-        <!-- Two Column Layout -->
+        <!-- Three Column Layout -->
         <div class="cv__content">
-          <!-- Left Column -->
-          <div class="cv__main">
-            <!-- Profile -->
+          <!-- Header spans all columns -->
+          <section class="cv__section cv__section--header">
+            <h1 class="cv__name" id="cvName"></h1>
+            <p class="cv__title" id="cvTitle"></p>
+            <div class="cv__contact" id="cvContact"></div>
+          </section>
+
+          <!-- Column 1: Profile -->
+          <div class="cv__column cv__column--1">
             <section class="cv__section cv__section--profile">
-              <h2 class="cv__section-title">Profil</h2>
+              <h2 class="cv__section-title">PROFIL</h2>
               <div class="cv__section-content" id="cvProfile"></div>
-            </section>
-
-            <!-- Experience -->
-            <section class="cv__section cv__section--experience">
-              <h2 class="cv__section-title">Expériences</h2>
-              <div class="cv__section-content" id="cvExperience"></div>
-            </section>
-
-            <!-- Education -->
-            <section class="cv__section cv__section--education">
-              <h2 class="cv__section-title">Formations</h2>
-              <div class="cv__section-content" id="cvEducation"></div>
             </section>
           </div>
 
-          <!-- Right Sidebar -->
-          <div class="cv__sidebar">
-            <!-- Skills -->
+          <!-- Column 2: Skills, Tools, Languages -->
+          <div class="cv__column cv__column--2">
             <section class="cv__section cv__section--skills">
               <h2 class="cv__section-title">Compétences</h2>
               <div class="cv__section-content" id="cvSkills"></div>
             </section>
 
-            <!-- Tools -->
             <section class="cv__section cv__section--tools">
               <h2 class="cv__section-title">Outils</h2>
               <div class="cv__section-content" id="cvTools"></div>
             </section>
 
-            <!-- Languages -->
             <section class="cv__section cv__section--languages">
               <h2 class="cv__section-title">Langues</h2>
               <div class="cv__section-content" id="cvLanguages"></div>
+            </section>
+          </div>
+
+          <!-- Column 3: Experience and Education -->
+          <div class="cv__column cv__column--3">
+            <section class="cv__section cv__section--experience">
+              <h2 class="cv__section-title">Expériences</h2>
+              <div class="cv__section-content" id="cvExperience"></div>
+            </section>
+
+            <section class="cv__section cv__section--education">
+              <h2 class="cv__section-title">Formations</h2>
+              <div class="cv__section-content" id="cvEducation"></div>
             </section>
           </div>
         </div>

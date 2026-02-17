@@ -1,5 +1,5 @@
 =name=
-FANILO BINI
+
 ==
 
 =title=
@@ -7,11 +7,11 @@ GRAPHISTE / DIRECTION ARTISTIQUE
 ==
 
 =contact_email=
-fanilo.f@gmail.com
+
 ==
 
 =contact_phone=
-+33 6 31 19 82 09
+
 ==
 
 =contact_location=
@@ -28,35 +28,34 @@ J’ai le permis B et je suis véhiculée; je suis mobile sur Paris/Île-de-Fran
 
 =experience=
 *Directrice Artistique Junior* | SPREY | 2023 - 2025
-Direction artistique et branding (Fargo-Sachinka, L’Atelier Borromée,...)
-Déclinaisons et créations de formats pour les réseaux sociaux ( Sanofi, Conseil de L’Europe, FHP, le Vrac de l’Estuaire, BATORAMA...)
-Montage vidéo
+· Direction artistique et branding (Fargo-Sachinka, L’Atelier Borromée,...)
+· Déclinaisons et créations de formats pour les réseaux sociaux ( Sanofi, Conseil de L’Europe, FHP, le Vrac de l’Estuaire, BATORAMA...)
+· Montage vidéo
 
 *Chargée de Communication* | LBN communauté | 2022 - 2023
-Création et réalisation de supports de communication internes et externes (Saisons Culturelles,
-Magazines mensuels, Festival de la Petite Enfance, Projet de Territoire, La Cuisine,...)
-Signalétique (Gestion de Tri)
-Montage vidéo (Saison Culturelle)
-Postes reseaux sociaux et infographies
-Mise en page de mensuels
+· Création et réalisation de supports de communication internes et externes (Saisons Culturelles,
+· Magazines mensuels, Festival de la Petite Enfance, Projet de Territoire, La Cuisine,...)
+· Signalétique (Gestion de Tri)
+· Montage vidéo (Saison Culturelle)
+· Postes reseaux sociaux et infographies
+· Mise en page de mensuels
 
 *Assistant graphiste* | Apparelo | 2021 - 2022
-Contrôle et préparation des fichiers PAO destinés au marquage textile (sérigraphie, broderie,
-transfert numérique) et objets publicitaires
-Saisie de BATs
+· Contrôle et préparation des fichiers PAO destinés au marquage textile (sérigraphie, broderie,transfert numérique) et objets publicitaires
+· Saisie de BATs
 
 *Mairie de Solesmes* | Stagiaire graphiste | 2021
-Design UX/UI sur le site internet municipale, Conception d'affiche et vignette WEB
+· Design UX/UI sur le site internet municipale, Conception d'affiche et vignette WEB
 ==
 
 =education=
 *Mastère Direction Artistique Communication 360°/ Communication Responsable* | LISAA | Paris | 2025
-Brand design, Direction Artistique, Communication inclusive, Managment, Eco-Conception, Montage vidéo, Motion design
-Publicité, Marketing, UI/UX, Gestion de projets
-Sujet de Mémoire : La communication culturelle dans les colléctivités
+· Brand design, Direction Artistique, Communication inclusive, Managment, Eco-Conception, Montage vidéo, Motion design
+· Publicité, Marketing, UI/UX, Gestion de projets
+· Sujet de Mémoire : La communication culturelle dans les colléctivités
 
 *Bachelor Communication Visuelle* | COM’ART | Paris | 2023
-Logo design et brand design, Studio Création, Expression plastique, Marketing, PAO, Motion design
+· Logo design et brand design, Studio Création, Expression plastique, Marketing, PAO, Motion design
 ==
 
 =skills=
@@ -64,10 +63,7 @@ Design UX/UI | Mis en page | Création d’identité visuelle 360 | Packaging | 
 ==
 
 =tools=
-*Adobe Creative Suite* (Photoshop, Illustrator, InDesign, Adobe XD, After Effectts)
-*Figma* | *Sketch*
-*Word* | *Excel* | *PowerPoint*
-*Procreate*
+Suite Adobe ( Photoshop, Illustrator, InDesign, After Effects, Premiere Pro, Lightroom, XD) | Figma | Blender | web design et prototypage  et Wireframing (UX, UI) | branding | Identité visuelle | charte graphique | mise en page print | communication digitale | montage vidéo | motion design | packaging | illustration | gestion | éco-conception et design inclusif
 ==
 
 =languages=
