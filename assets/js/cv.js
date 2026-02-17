@@ -218,3 +218,14 @@
   // Load CV data on page load
   loadCVData();
 })();
+
+// Download CV PDF
+function downloadCV() {
+  const pdfUrl = "./FaniloBINI_CV_26.pdf";
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = "FaniloBINI_CV_26.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
