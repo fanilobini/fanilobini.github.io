@@ -275,24 +275,8 @@ a:focus-visible {
   text-decoration: none;
 }
 
-.brand-block {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 0 0 auto;
-}
 
-.brand-subtitle {
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.1;
-  letter-spacing: 0em;
-  color: inherit;
-  pointer-events: none;
-}
+
 
 .nav {
   display: flex;
