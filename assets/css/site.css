@@ -166,8 +166,6 @@ body {
   font-size: 2.0rem;
   font-weight: 300;
   text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .home-loader__pulse {
@@ -273,7 +271,7 @@ a:focus-visible {
   font-size: 72px;
   text-transform: uppercase;
   line-height: 0.9;
-  display: block;
+  display: flex;
   text-decoration: none;
 }
 
@@ -292,7 +290,6 @@ a:focus-visible {
   text-transform: uppercase;
   line-height: 1.1;
   letter-spacing: 0em;
-  overflow: hidden;
   color: inherit;
   pointer-events: none;
 }
