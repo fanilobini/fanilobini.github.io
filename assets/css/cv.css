@@ -255,19 +255,19 @@
   }
 
   .cv__name {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .cv__title {
-    font-size: 0.8rem;
+    font-size: 1.8rem;
   }
 
   .cv__section-title {
-    font-size: 0.7rem;
+    font-size: 1.8rem;
   }
 
   .cv__section-content {
-    font-size: 0.68rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -299,15 +299,19 @@
   }
 
   .cv__name {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+  }
+
+  .cv__title {
+    font-size: 1.8rem;
   }
 
   .cv__section-title {
-    font-size: 0.65rem;
+    font-size: 1.8rem;
   }
 
   .cv__section-content {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
   }
 
   .cv__actions {
