@@ -406,6 +406,34 @@
       "year": 2026
     },
     {
+      "number": 11,
+      "name": "BIBLIOTHEQUE",
+      "title": "ILLUSTRATIONS LA BIBLIOTHEQUE",
+      "slug": "11-bibliotheque",
+      "dir": "11. BIBLIOTHEQUE",
+      "banner": "travaux/11. BIBLIOTHEQUE/banner.png",
+      "bannerType": "image",
+      "home": "travaux/11. BIBLIOTHEQUE/home.png",
+      "homeType": "image",
+      "main_body": "Illustrations pour la bibliothèque Michel Lebrun, pour les retour de livres et section Bande dessinés.",
+      "infos": "Client : LBN Communauté (72)\nSecteur : Service publique\nLien : www.cc-lbn.fr/publications/projet-de-territoire/\nAnnée : 2023",
+      "media": [
+        {
+          "type": "image",
+          "src": "travaux/11. BIBLIOTHEQUE/1.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/11. BIBLIOTHEQUE/2.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/11. BIBLIOTHEQUE/3.png"
+        }
+      ],
+      "year": 2023
+    },
+    {
       "number": 12,
       "name": "DETOURS",
       "title": "détours",
