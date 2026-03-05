@@ -488,14 +488,14 @@
     {
       "number": 13,
       "name": "PORTRAITS",
-      "title": "Portrait et auto portrait",
+      "title": "PORTRAIT",
       "slug": "13-portraits",
       "dir": "13. PORTRAITS",
       "banner": "travaux/13. PORTRAITS/banner.png",
       "bannerType": "image",
       "home": "travaux/13. PORTRAITS/home.png",
       "homeType": "image",
-      "main_body": "Dessin peinture de moi même et un chat. j'incarne le pamplemoose, un fruit pas comme les autres.",
+      "main_body": "Auto-portrait à l'acrylic accompagné de mon chat. J'incarne le pamplemousse, un fruit pas comme les autres.",
       "infos": "Secteur : Illustration \nAnnée : 2026",
       "media": [
         {
