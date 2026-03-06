@@ -504,6 +504,33 @@
         }
       ],
       "year": 2026
+    },
+    {
+      "number": 999,
+      "name": "MA TYPO",
+      "title": "EEA (Etablissement d'Enseignement Musicale)",
+      "slug": "999-ma-typo",
+      "dir": "999. MA TYPO",
+      "banner": "travaux/999. MA TYPO/banner.png",
+      "bannerType": "image",
+      "home": "travaux/999. MA TYPO/home.png",
+      "homeType": "image",
+      "main_body": "Mise en page de la brochure pour les cours d'enseignements musicales pour la Communauté de Commune LBN (72)",
+      "infos": "Client : LBN Communauté\nSecteur : Service publique\nAnnée : 2023",
+      "media": [
+        {
+          "type": "image",
+          "src": "travaux/999. MA TYPO/1.png"
+        }
+      ],
+      "type": "typo",
+      "fonts": [
+        {
+          "name": "DesFermesPourMaVille display",
+          "file": "travaux/999. MA TYPO/DesFermesPourMaVille_display.woff2"
+        }
+      ],
+      "year": 2023
     }
   ],
   "infos": {
