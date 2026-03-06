@@ -159,6 +159,179 @@
             const gallery = document.getElementById('gallery');
             if (!gallery) return;
 
+            /* ── Font Trial mode for type:"typo" projects ── */
+            if (p.type === 'typo' && Array.isArray(p.fonts) && p.fonts.length) {
+              // Block right-click & drag on the entire page for typo projects
+              document.addEventListener('contextmenu', (e) => e.preventDefault());
+              document.addEventListener('dragstart', (e) => e.preventDefault());
+              document.addEventListener('keydown', (e) => {
+                if (e.ctrlKey && (e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'U')) {
+                  e.preventDefault();
+                }
+              });
+
+              // Render the normal gallery first (images/videos)
+              const items = Array.isArray(p.media) ? p.media : [];
+              const frag = document.createDocumentFragment();
+              for (const m of items) {
+                const wrap = document.createElement('div');
+                wrap.className = 'gallery__item';
+                if (m.type === 'video') {
+                  const v = document.createElement('video');
+                  v.autoplay = true; v.muted = true; v.loop = true;
+                  v.playsInline = true; v.preload = 'metadata';
+                  v.src = window.PortfolioData.resolveAssetPath(m.src);
+                  wrap.appendChild(v);
+                } else {
+                  const img = document.createElement('img');
+                  img.loading = 'lazy';
+                  img.alt = p.title ?? 'Image';
+                  img.src = window.PortfolioData.resolveAssetPath(m.src);
+                  wrap.appendChild(img);
+                }
+                frag.appendChild(wrap);
+              }
+              gallery.innerHTML = '';
+              gallery.appendChild(frag);
+
+              // Font trial section AFTER the gallery
+              const trialSection = document.createElement('section');
+              trialSection.className = 'font-trial';
+
+              const PLACEHOLDER = 'Essaye moi';
+
+              for (const fontDef of p.fonts) {
+                const fontUrl = window.PortfolioData.resolveAssetPath(fontDef.file);
+                const familyId = 'Trial_' + Math.random().toString(36).slice(2, 10);
+
+                (async () => {
+                  try {
+                    const res = await fetch(fontUrl);
+                    const buf = await res.arrayBuffer();
+                    const face = new FontFace(familyId, buf);
+                    await face.load();
+                    document.fonts.add(face);
+                  } catch (err) {
+                    console.error('Font load failed:', err);
+                    return;
+                  }
+
+                  const card = document.createElement('div');
+                  card.className = 'font-trial__card';
+
+                  // Heading: "Essaie la Typo ↓"
+                  const heading = document.createElement('div');
+                  heading.className = 'font-trial__heading';
+                  heading.innerHTML = 'Essaie la Typo <span>&#8595;</span>';
+                  card.appendChild(heading);
+
+                  // Hidden input for keyboard capture
+                  const input = document.createElement('input');
+                  input.type = 'text';
+                  input.className = 'font-trial__hidden-input';
+                  input.value = '';
+                  input.maxLength = 100;
+                  input.autocomplete = 'off';
+                  input.spellcheck = false;
+                  input.setAttribute('aria-label', 'Texte de test pour la typographie');
+                  let showPlaceholder = true;
+                  card.appendChild(input);
+
+                  // Canvas box (black border, clickable to focus input)
+                  const canvasWrap = document.createElement('div');
+                  canvasWrap.className = 'font-trial__canvas-wrap';
+                  canvasWrap.addEventListener('click', () => {
+                    input.focus();
+                  });
+
+                  const canvas = document.createElement('canvas');
+                  canvasWrap.appendChild(canvas);
+                  card.appendChild(canvasWrap);
+
+                  // Controls row (right-aligned size slider)
+                  const controls = document.createElement('div');
+                  controls.className = 'font-trial__controls';
+
+                  const sizeWrap = document.createElement('div');
+                  sizeWrap.className = 'font-trial__size';
+
+                  const sizeLabel = document.createElement('span');
+                  sizeLabel.textContent = '48px';
+
+                  const slider = document.createElement('input');
+                  slider.type = 'range';
+                  slider.min = '16';
+                  slider.max = '120';
+                  slider.value = '48';
+
+                  sizeWrap.appendChild(sizeLabel);
+                  sizeWrap.appendChild(slider);
+                  controls.appendChild(sizeWrap);
+                  card.appendChild(controls);
+
+                  trialSection.appendChild(card);
+
+                  function render() {
+                    const text = showPlaceholder && !input.value ? PLACEHOLDER : input.value;
+                    const isPlaceholder = showPlaceholder && !input.value;
+                    const fontSize = parseInt(slider.value, 10);
+                    const dpr = window.devicePixelRatio || 1;
+                    const ctx = canvas.getContext('2d');
+
+                    ctx.font = `${fontSize}px "${familyId}"`;
+                    const metrics = ctx.measureText(text);
+                    const textW = Math.ceil(metrics.width) + 20;
+                    const textH = Math.ceil(fontSize * 1.4);
+
+                    const wrapW = canvasWrap.clientWidth - 32 || 600;
+                    const displayW = Math.max(textW, wrapW);
+
+                    canvas.width = displayW * dpr;
+                    canvas.height = textH * dpr;
+                    canvas.style.width = displayW + 'px';
+                    canvas.style.height = textH + 'px';
+
+                    ctx.scale(dpr, dpr);
+                    ctx.clearRect(0, 0, displayW, textH);
+                    ctx.fillStyle = isPlaceholder
+                      ? '#aaa'
+                      : (getComputedStyle(document.documentElement).getPropertyValue('--fg').trim() || '#000');
+                    ctx.font = `${fontSize}px "${familyId}"`;
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText(text, 4, textH / 2);
+                  }
+
+                  input.addEventListener('input', () => {
+                    const cleaned = input.value.replace(/[^A-Za-z0-9 ]/g, '');
+                    if (cleaned !== input.value) input.value = cleaned;
+                    render();
+                  });
+
+                  input.addEventListener('focus', () => {
+                    showPlaceholder = false;
+                    render();
+                  });
+
+                  input.addEventListener('blur', () => {
+                    if (!input.value) showPlaceholder = true;
+                    render();
+                  });
+
+                  slider.addEventListener('input', () => {
+                    sizeLabel.textContent = slider.value + 'px';
+                    render();
+                  });
+
+                  window.addEventListener('resize', render);
+                  render();
+                })();
+              }
+
+              gallery.parentNode.insertBefore(trialSection, gallery.nextSibling);
+              return;
+            }
+
+            /* ── Normal gallery ── */
             const items = Array.isArray(p.media) ? p.media : [];
             const frag = document.createDocumentFragment();
 
