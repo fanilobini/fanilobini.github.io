@@ -794,3 +794,98 @@ a:focus-visible {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ── Font Trial (MA TYPO) ────────────────────────────── */
+
+.font-trial {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 40px 0 60px;
+}
+
+.font-trial__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.font-trial__heading {
+  font-family: "FSIndustrieCd", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fg);
+  margin-bottom: 14px;
+}
+
+.font-trial__heading span {
+  display: inline-block;
+  animation: bounceDown 1.2s ease-in-out infinite;
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+.font-trial__canvas-wrap {
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  padding: 16px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: text;
+}
+
+.font-trial__canvas-wrap canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.font-trial__hidden-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.font-trial__controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.font-trial__size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "FSIndustrieCd", system-ui, sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.font-trial__size input[type="range"] {
+  width: 100px;
+  accent-color: var(--fg);
+}
+
+@media (max-width: 640px) {
+  .font-trial__canvas-wrap {
+    padding: 12px;
+  }
+  .font-trial__size input[type="range"] {
+    width: 80px;
+  }
+}
