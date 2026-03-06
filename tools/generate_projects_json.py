@@ -56,6 +56,9 @@ def parse_info_txt(path: Path) -> dict[str, str]:
     return {k: "\n".join(v).strip() for k, v in sections.items()}
 
 
+FONT_EXTENSIONS = {".otf", ".woff2"}
+
+
 def media_type_for(path: Path) -> str:
     ext = path.suffix.lower()
     if ext in {".mp4", ".webm", ".mov"}:
@@ -133,6 +136,12 @@ def build_projects() -> list[dict[str, Any]]:
                 continue
             media_files.append(f)
 
+        # Detect font files (.otf, .woff2) for typo projects
+        font_files = sorted(
+            [f for f in child.iterdir() if f.is_file() and f.suffix.lower() in FONT_EXTENSIONS],
+            key=lambda f: f.name,
+        )
+
         media_files.sort(key=sort_media_key)
 
         rel_dir = f"travaux/{child.name}"
@@ -178,6 +187,17 @@ def build_projects() -> list[dict[str, Any]]:
                 {"type": media_type_for(f), "src": f"{rel_dir}/{f.name}"} for f in media_files
             ],
         }
+
+        # If font files are present, mark as typo project
+        if font_files:
+            project["type"] = "typo"
+            project["fonts"] = [
+                {
+                    "name": f.stem.replace("_", " "),
+                    "file": f"{rel_dir}/{f.name}",
+                }
+                for f in font_files
+            ]
 
         # small nicety: attempt to extract year from infos
         year_match = re.search(r"\b(19\d{2}|20\d{2})\b", project["infos"])
