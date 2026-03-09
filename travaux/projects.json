@@ -520,15 +520,7 @@
       "media": [
         {
           "type": "image",
-          "src": "travaux/999. MA TYPO/1.png"
-        },
-        {
-          "type": "image",
           "src": "travaux/999. MA TYPO/2.png"
-        },
-        {
-          "type": "image",
-          "src": "travaux/999. MA TYPO/3.png"
         },
         {
           "type": "image",
@@ -553,10 +545,6 @@
         {
           "type": "image",
           "src": "travaux/999. MA TYPO/9.png"
-        },
-        {
-          "type": "image",
-          "src": "travaux/999. MA TYPO/11.png"
         }
       ],
       "type": "typo",
