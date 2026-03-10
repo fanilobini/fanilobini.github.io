@@ -520,6 +520,10 @@
       "media": [
         {
           "type": "image",
+          "src": "travaux/999. MA TYPO/1.png"
+        },
+        {
+          "type": "image",
           "src": "travaux/999. MA TYPO/2.png"
         },
         {
@@ -532,6 +536,10 @@
         },
         {
           "type": "image",
+          "src": "travaux/999. MA TYPO/6.png"
+        },
+        {
+          "type": "image",
           "src": "travaux/999. MA TYPO/7.png"
         },
         {
@@ -541,6 +549,14 @@
         {
           "type": "image",
           "src": "travaux/999. MA TYPO/9.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/999. MA TYPO/10.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/999. MA TYPO/11.png"
         }
       ],
       "type": "typo",
