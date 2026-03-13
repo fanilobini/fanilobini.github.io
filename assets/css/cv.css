@@ -197,7 +197,7 @@
 .cv__btn {
   padding: 0.6rem 1.5rem;
   font-size: 0.85rem;
-  font-weight: bold;
+  font-weight: 900;
   text-decoration: none;
   display: inline-block;
   border-radius: 2px;
@@ -220,6 +220,8 @@
 .cv__btn--secondary {
   background: #fff;
   color: #000;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .cv__btn--secondary:hover {
