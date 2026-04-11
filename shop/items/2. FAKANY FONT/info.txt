@@ -1,0 +1,11 @@
+=title=
+FAKANY FONT
+==
+
+=price=
+FREE
+== 
+
+=link=
+https://fanilobini.gumroad.com/l/fakany_trial
+==
