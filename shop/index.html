@@ -3,36 +3,51 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shop</title>
+    <title>Shop — FANILO BINI</title>
     <link rel="icon" href="../assets/favicon.png" />
     <link rel="preload" href="../assets/fonts/FS Industrie Cd Regular.otf" as="font" type="font/otf" crossorigin />
     <link rel="preload" href="../assets/fonts/FS Industrie Cd Bold.otf" as="font" type="font/otf" crossorigin />
     <link rel="stylesheet" href="../assets/css/site.css" />
   </head>
-  <body>
+  <body class="shop-page">
     <header class="site-header">
       <div class="site-header__inner">
         <a class="brand" href="../">FANILO BINI</a>
         <nav class="nav">
           <a class="nav__link" href="../#projects-section">Travaux</a>
           <a class="nav__link" href="../infos/">Infos</a>
-          <a class="nav__link nav__link--active" href="https://www.etsy.com/shop/Pamplemoosse" target="_blank" rel="noopener noreferrer">Shop</a>
+          <a class="nav__link nav__link--active" href="./">Shop</a>
           <a class="nav__link" href="https://www.instagram.com/fanilo.bini" target="_blank" rel="noopener noreferrer">Insta</a>
           <a class="nav__link" href="https://www.malt.fr/profile/fanilobini" target="_blank" rel="noopener noreferrer">Malt</a>
         </nav>
       </div>
     </header>
 
-    <main class="project">
-      <div class="project__header" style="grid-template-columns:1fr;">
-        <div>
-          <h1 class="project__title">Shop</h1>
-          <div class="project__body">
-Page shop à connecter (statique ou via un JSON). Pour l’instant, c’est un placeholder.
-          </div>
-        </div>
+    <main class="shop" aria-label="Shop">
+      <div class="shop__inner">
+        <aside class="shop__sidebar">
+          <h1 class="shop__heading">THE SHOP</h1>
+          <div class="shop__bio" id="shopBio"></div>
+          <div class="shop__sidebar-links" id="shopLinks"></div>
+          <div class="shop__credit" id="shopCredit">©FANILOBINI</div>
+        </aside>
+        <section class="shop__grid-area">
+          <div class="shop__grid" id="shopGrid" aria-label="Articles"></div>
+        </section>
       </div>
     </main>
+
+    <template id="shopItemTpl">
+      <a class="shop-item" href="#" target="_blank" rel="noopener noreferrer">
+        <div class="shop-item__media">
+          <img class="shop-item__img" alt="" loading="lazy" />
+        </div>
+        <div class="shop-item__meta">
+          <div class="shop-item__title"></div>
+          <div class="shop-item__price"></div>
+        </div>
+      </a>
+    </template>
 
     <footer class="footer">
       <div class="footer__inner">
@@ -47,6 +62,9 @@ Page shop à connecter (statique ou via un JSON). Pour l’instant, c’est un p
       </div>
     </footer>
     <button class="back-to-top" type="button" aria-label="Retour en haut">Top</button>
+    <script src="../assets/js/projects.js"></script>
+    <script src="../assets/js/shop.js"></script>
+    <script src="../assets/js/animations.js"></script>
     <script src="../assets/js/block-media-save.js"></script>
     <script src="../assets/js/back-to-top.js"></script>
   </body>

@@ -1,4 +1,4 @@
-name: Generate travaux projects.json
+name: Generate projects JSON files
 
 on:
   push:
@@ -7,7 +7,9 @@ on:
     paths:
       - "travaux/**"
       - "infos/**"
+      - "shop/**"
       - "tools/generate_projects_json.py"
+      - "tools/generate_shop_json.py"
       - ".github/workflows/generate_travaux_projects_json.yml"
 
 permissions:
@@ -25,16 +27,27 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate projects.json
+      - name: Generate travaux projects.json
         run: python tools/generate_projects_json.py
+
+      - name: Generate shop shop.json
+        run: python tools/generate_shop_json.py
 
       - name: Commit changes
         run: |
+          CHANGED=""
           if [[ -n "$(git status --porcelain travaux/projects.json)" ]]; then
+            git add travaux/projects.json
+            CHANGED="travaux/projects.json"
+          fi
+          if [[ -n "$(git status --porcelain shop/shop.json)" ]]; then
+            git add shop/shop.json
+            CHANGED="$CHANGED shop/shop.json"
+          fi
+          if [[ -n "$CHANGED" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add travaux/projects.json
-            git commit -m "chore: update travaux projects.json"
+            git commit -m "chore: update generated JSON files"
             git push
           else
             echo "No changes to commit."

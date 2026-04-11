@@ -1,0 +1,11 @@
+=main_body= 
+Hello ! Bienvenue sur mon Shop! Je vends illustrations, objet d'édition print et fichiers digitale (polices, etc) et tout ce qui m'inspire :)
+== 
+
+=shop1= 
+https://www.etsy.com/shop/Pamplemoosse
+== 
+
+=shop2= 
+https://fanilobini.gumroad.com/
+== 

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "bio": {
+    "main_body": "Hello ! Bienvenue sur mon Shop! Je vends illustrations, objet d'édition print et fichiers digitale (polices, etc) et tout ce qui m'inspire :)",
+    "shop1": "https://www.etsy.com/shop/Pamplemoosse",
+    "shop2": "https://fanilobini.gumroad.com/"
+  },
+  "items": [
+    {
+      "number": 1,
+      "name": "CALENDRIER 2026",
+      "title": "CALENDRIER 2026",
+      "price": "18€",
+      "link": "https://www.etsy.com/fr/listing/4438881835/",
+      "images": [
+        "items/1. CALENDRIER 2026/1.png",
+        "items/1. CALENDRIER 2026/2.png"
+      ]
+    },
+    {
+      "number": 2,
+      "name": "item 2",
+      "title": "item 2",
+      "price": "",
+      "link": "",
+      "images": []
+    },
+    {
+      "number": 3,
+      "name": "item 3",
+      "title": "item 3",
+      "price": "",
+      "link": "",
+      "images": []
+    },
+    {
+      "number": 4,
+      "name": "item 4",
+      "title": "item 4",
+      "price": "",
+      "link": "",
+      "images": []
+    }
+  ]
+}
