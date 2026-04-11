@@ -16,6 +16,19 @@
         "items/1. CALENDRIER 2026/1.png",
         "items/1. CALENDRIER 2026/2.png"
       ]
+    },
+    {
+      "number": 2,
+      "name": "FAKANY FONT",
+      "title": "FAKANY FONT",
+      "price": "FREE",
+      "link": "https://fanilobini.gumroad.com/l/fakany_trial",
+      "images": [
+        "items/2. FAKANY FONT/1.png",
+        "items/2. FAKANY FONT/2.png",
+        "items/2. FAKANY FONT/3.png",
+        "items/2. FAKANY FONT/4.png"
+      ]
     }
   ]
 }
