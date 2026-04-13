@@ -1,5 +1,6 @@
 =main_body= 
-Hello ! Bienvenue sur mon Shop! Je vends illustrations, objet d'édition print et fichiers digitale (polices, etc) et tout ce qui m'inspire :)
+Hello ! Bienvenue sur mon Shop! Je vends illustrations, objets d'édition print et fichiers digitals 
+(polices, etc) et tout ce qui m'inspire :)
 == 
 
 =shop1= 
