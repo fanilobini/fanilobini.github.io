@@ -506,6 +506,26 @@
       "year": 2026
     },
     {
+      "number": 14,
+      "name": "RAVINALA",
+      "title": "RAVINALA",
+      "slug": "14-ravinala",
+      "dir": "14. RAVINALA",
+      "banner": "travaux/14. RAVINALA/banner.png",
+      "bannerType": "image",
+      "home": "travaux/14. RAVINALA/home.png",
+      "homeType": "image",
+      "main_body": "Lors d'une croisière sur le Canal des Pangalanes à Madagascar, j'ai pu faire la connaissance de Njaka, Sonia et leur fils Thimothy qui nous ont fait découvrir l'histoire, la culture autour de ce canal de plus de 700 km. Nous avons voyagé sur leur bateau, le Ravinala (référence à l'arbre emblématique de Madagascar), pendant plusieurs jours. Incroyable voyage !",
+      "infos": "Client : Njaka, Sonia et Thimothy\nSecteur : Illustration\nAnnée : 2025",
+      "media": [
+        {
+          "type": "image",
+          "src": "travaux/14. RAVINALA/1.png"
+        }
+      ],
+      "year": 2025
+    },
+    {
       "number": 999,
       "name": "MA TYPO",
       "title": "Fakany display",
