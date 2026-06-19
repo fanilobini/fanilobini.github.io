@@ -530,6 +530,30 @@
       "year": 2025
     },
     {
+      "number": 15,
+      "name": "PORTRAITS",
+      "title": "PORTRAIT AQUARELLE",
+      "slug": "15-portraits",
+      "dir": "15. PORTRAITS",
+      "banner": "travaux/15. PORTRAITS/banner.png",
+      "bannerType": "image",
+      "home": "travaux/15. PORTRAITS/home.png",
+      "homeType": "image",
+      "main_body": "Voici deux portraits fait à l'aquarelle lors de mon séjour à l'Île Maurice.",
+      "infos": "Secteur : Illustration\nAnnée : 2026",
+      "media": [
+        {
+          "type": "image",
+          "src": "travaux/15. PORTRAITS/1.png"
+        },
+        {
+          "type": "image",
+          "src": "travaux/15. PORTRAITS/2.png"
+        }
+      ],
+      "year": 2026
+    },
+    {
       "number": 999,
       "name": "MA TYPO",
       "title": "Fakany display",
